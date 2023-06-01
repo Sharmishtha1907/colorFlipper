@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:40vh;
+        }
+        button{
+            background-color: rgb(204, 219, 219);
+            border-radius: 5px;
+            padding: 10px 12px;
+            font-size: 18px ;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Color Flipper</h1>
+    <button onclick=chngcl()>Click Me</button>
+    <script>
+        function chngcl(){
+        var col=["green","red","black","white","#FA8072","#40E0D0","#9FE2BF","#DE3163","#6495ED","#FFBF00","#999999"];
+        let idx=Math.floor(Math.random()*col.length);
+        document.getElementsByTagName("body")[0].style.backgroundColor = col[idx];
+        }
+    </script>
+</body>
+</html>
